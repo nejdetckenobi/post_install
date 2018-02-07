@@ -41,8 +41,8 @@ echo "# Installing Cerebro #"
 echo "######################"
 echo
 
-if [ ! -f "temp/cerebro_0.3.2_amd64.deb" ]; then
-    wget https://github.com/KELiON/cerebro/releases/download/v0.3.2/cerebro_0.3.2_amd64.deb -O temp/cerebro_0.3.2_amd64.deb
+if [ ! -f "temp/cerebro_0.3.0_amd64.deb" ]; then
+    wget https://github.com/KELiON/cerebro/releases/download/v0.3.0/cerebro_0.3.0_amd64.deb -O temp/cerebro_0.3.0_amd64.deb
 fi
 dpkg -i temp/cerebro_0.3.2_amd64.deb
 

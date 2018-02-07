@@ -1,0 +1,14 @@
+{
+	"bootstrapped": true,
+	"installed_packages":
+	[
+		"GitGutter",
+		"Hipster",
+		"Package Control",
+		"Predawn",
+		"Random Everything",
+		"SublimeLinter",
+		"SublimeLinter-pep8",
+		"SublimeLinter-pyflakes"
+	]
+}
