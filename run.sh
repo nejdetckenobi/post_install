@@ -53,7 +53,7 @@ echo
 
 sudo add-apt-repository --yes ppa:peek-developers/stable
 sudo apt update
-sudo apt install peek
+sudo apt install -y peek
 
 echo
 echo "########################"
@@ -64,8 +64,8 @@ echo
 cd temp
 git clone https://github.com/lupoDharkael/flameshot
 cd flameshot
-sudo apt install libqt5dbus5, libqt5network5, libqt5core5a, libqt5widgets5, libqt5gui5
-sudo apt install git g++ build-essential qt5-qmake qt5-default qttools5-dev-tools
+sudo apt install -y libqt5dbus5, libqt5network5, libqt5core5a, libqt5widgets5, libqt5gui5
+sudo apt install -y git g++ build-essential qt5-qmake qt5-default qttools5-dev-tools
 qmake && make
 make install
 
