@@ -16,6 +16,7 @@ echo "# Installing packages with PIP #"
 echo "################################"
 echo
 
+sudo pip3 install --upgrade pip
 xargs -a package_lists/pip_package_list sudo pip3 install
 
 mkdir -p temp
