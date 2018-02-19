@@ -69,6 +69,7 @@ sudo apt install -y libqt5dbus5, libqt5network5, libqt5core5a, libqt5widgets5, l
 sudo apt install -y git g++ build-essential qt5-qmake qt5-default qttools5-dev-tools
 qmake && make
 make install
+cd -
 
 echo
 echo "########################"
@@ -77,3 +78,24 @@ echo "########################"
 echo
 
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+echo
+echo "##############################"
+echo "# Installing custom binaries #"
+echo "##############################"
+echo
+
+mkdir -p "$HOME/bin"
+
+echo "Installing GRV..."
+wget -O "$HOME/bin/grv" "https://github.com/rgburke/grv/releases/download/v0.1.2/grv_v0.1.2_linux64"
+chmod +x "$HOME/bin/grv"
+
+echo "Installing Genact..."
+wget -O "$HOME/bin/genact" "https://github.com/svenstaro/genact/releases/download/0.4.0/genact-linux"
+chmod +x "$HOME/bin/genact"
+
+echo "Installing Ngrok..."
+wget -O "temp/ngrok.zip" "https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip"
+unzip "temp/ngrok.zip" -d "$HOME/bin"
+chmod +x "$HOME/bin/ngrok"
