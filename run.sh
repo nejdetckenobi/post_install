@@ -31,7 +31,7 @@ if [ ! -f "temp/google-chrome-stable_current_amd64.deb" ]; then
 	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O temp/google-chrome-stable_current_amd64.deb
 fi
 
-dpkg -i temp/google-chrome-stable_current_amd64.deb
+sudo dpkg -i temp/google-chrome-stable_current_amd64.deb
 
 # wget https://packagecontrol.io/Package%20Control.sublime-package -O ~/.config/sublime-text-3/Installed\ Packages/Package\ Control.sublime-package
 
@@ -44,17 +44,8 @@ echo
 if [ ! -f "temp/cerebro_0.3.0_amd64.deb" ]; then
     wget https://github.com/KELiON/cerebro/releases/download/v0.3.0/cerebro_0.3.0_amd64.deb -O temp/cerebro_0.3.0_amd64.deb
 fi
-dpkg -i temp/cerebro_0.3.0_amd64.deb
+sudo dpkg -i temp/cerebro_0.3.0_amd64.deb
 
-echo
-echo "###################"
-echo "# Installing Peek #"
-echo "###################"
-echo
-
-sudo add-apt-repository --yes ppa:peek-developers/stable
-sudo apt update
-sudo apt install -y peek
 
 echo
 echo "########################"
@@ -99,3 +90,21 @@ echo "Installing Ngrok..."
 wget -O "temp/ngrok.zip" "https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip"
 unzip "temp/ngrok.zip" -d "$HOME/bin"
 chmod +x "$HOME/bin/ngrok"
+
+
+echo
+echo "##################################"
+echo "# Installing custom PPA programs #"
+echo "##################################"
+echo
+
+echo "Adding Peek"
+echo "Adding Neofetch"
+sudo add-apt-repository --yes ppa:peek-developers/stable
+sudo add-apt-repository --yes ppa:dawidd0811/neofetch
+sudo apt update
+
+echo "Installing Peek"
+echo "Installing Neofetch"
+sudo apt install -y peek
+sudo apt install -y neofetch
