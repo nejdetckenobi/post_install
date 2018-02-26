@@ -8,6 +8,8 @@ python3-pip
 ipython3
 bpython3
 pypy
+ruby
+ruby-dev
 htop
 iotop
 tiptop
@@ -37,3 +39,4 @@ bleachbit
 sqlite3
 gparted
 mpg321
+pidgin

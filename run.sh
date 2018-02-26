@@ -28,7 +28,7 @@ echo "############################"
 echo
 
 if [ ! -f "temp/google-chrome-stable_current_amd64.deb" ]; then
-	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O temp/google-chrome-stable_current_amd64.deb
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O temp/google-chrome-stable_current_amd64.deb
 fi
 
 sudo dpkg -i temp/google-chrome-stable_current_amd64.deb
@@ -57,7 +57,7 @@ cd temp
 git clone https://github.com/lupoDharkael/flameshot
 cd flameshot
 sudo apt install -y libqt5dbus5, libqt5network5, libqt5core5a, libqt5widgets5, libqt5gui5
-sudo apt install -y git g++ build-essential qt5-qmake qt5-default qttools5-dev-tools
+sudo apt install -y g++ build-essential qt5-qmake qt5-default qttools5-dev-tools
 qmake && make
 make install
 cd -
