@@ -8,7 +8,7 @@
 		"Predawn",
 		"Random Everything",
 		"SublimeLinter",
-		"SublimeLinter-pep8",
+		"SublimeLinter-pycodestyle",
 		"SublimeLinter-pyflakes"
 	]
 }

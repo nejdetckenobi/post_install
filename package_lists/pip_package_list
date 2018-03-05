@@ -15,7 +15,7 @@ tensorflow
 redis
 schema
 requests
-pep8
+pycodestyle
 pyflakes
 pyquery
 percol
