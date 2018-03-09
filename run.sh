@@ -64,6 +64,14 @@ cd -
 
 echo
 echo "###################"
+echo "# Installing FUCK #"
+echo "###################"
+echo
+
+sudo pip3 install thefuck
+
+echo
+echo "###################"
 echo "# Installing GBSE #"
 echo "###################"
 echo
