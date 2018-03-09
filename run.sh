@@ -63,6 +63,17 @@ make install
 cd -
 
 echo
+echo "###################"
+echo "# Installing GBSE #"
+echo "###################"
+echo
+
+git clone https://github.com/jayphelps/git-blame-someone-else.git
+cd "git-blame-someone-else"
+sudo make install
+cd -
+
+echo
 echo "########################"
 echo "# Installing Oh-My-ZSH #"
 echo "########################"
