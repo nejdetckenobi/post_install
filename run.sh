@@ -102,6 +102,7 @@ wget -O "temp/ngrok.zip" "https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linu
 unzip "temp/ngrok.zip" -d "$HOME/bin"
 chmod +x "$HOME/bin/ngrok"
 
+wget -O "$HOME/bin/template" "https://gist.githubusercontent.com/nejdetckenobi/2cbac6bb069d7107a0d9684f8e052043/raw/cf0c7be799259840308f54273734d088926d1f27/template.sh"
 
 echo
 echo "##################################"
