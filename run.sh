@@ -42,10 +42,20 @@ echo "######################"
 echo
 
 if [ ! -f "temp/cerebro_0.3.0_amd64.deb" ]; then
-    wget https://github.com/KELiON/cerebro/releases/download/v0.3.0/cerebro_0.3.0_amd64.deb -O temp/cerebro_0.3.0_amd64.deb
+    wget "https://github.com/KELiON/cerebro/releases/download/v0.3.0/cerebro_0.3.0_amd64.deb" -O "temp/cerebro_0.3.0_amd64.deb"
 fi
 sudo dpkg -i temp/cerebro_0.3.0_amd64.deb
 
+echo
+echo "########################"
+echo "# Installing GitKraken #"
+echo "########################"
+echo
+
+if [ ! -f "temp/gitkraken-amd64.deb" ]; then
+    wget "https://release.gitkraken.com/linux/gitkraken-amd64.deb" -O "temp/gitkraken-amd64.deb"
+fi
+sudo dpkg -i temp/gitkraken-amd64.deb
 
 echo
 echo "########################"
