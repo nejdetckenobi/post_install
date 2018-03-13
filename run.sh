@@ -122,6 +122,10 @@ chmod +x "$HOME/bin/ngrok"
 
 wget -O "$HOME/bin/template" "https://gist.githubusercontent.com/nejdetckenobi/2cbac6bb069d7107a0d9684f8e052043/raw/cf0c7be799259840308f54273734d088926d1f27/template.sh"
 
+echo "Installing Gecko Driver..."
+wget -O "temp/geckodriver.tar.gz" "https://github.com/mozilla/geckodriver/releases/download/v0.20.0/geckodriver-v0.20.0-linux64.tar.gz"
+tar -xzf "temp/geckodriver.tar.gz" -C "$HOME/bin"
+
 echo
 echo "##################################"
 echo "# Installing custom PPA programs #"
